@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body,html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('imge.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bg  {
+          background-image url("imge.png")no-repeat;
+          /* The image used */
+          /* Full height */
+            height: 100%;
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        
+        
+        .wrapper {
+            width: 700px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255 .2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0 0 0 .2)
+            color: white;
+            border-radius: 10px;
+            padding: 30px 40px
+        }
+        
+        .wrapper h1 {
+            margin-bottom: 20px;
+            text-align: Center;
+        }
+        
+        .wrapper input-box {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 40px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+
+        
+        .input-box input {
+           width: 90%;
+           height: 100%;
+           background: transparent;
+           border: none;
+           outline: none;
+           border: 2px solid rgba(255, 255, 255, .2);
+           border-radius: 45px;
+           font-size: 16;
+           color: white#fff;
+           padding: 20px 45px 20px 20px;
+        }
+        
+        .input-box input : :placeholder {
+           color: white#fff;
+        }
+        
+        .input-box i {
+           positioning: absolute;
+           right: 20px;
+           top: 50px;
+           transform: translateY(-50%);
+           font-size: 20px;
+        }
+        
+        .wrapper.remember-forgot {
+           display: flex;
+           justify-content: space-between;
+           font-size: 14.5px;
+           margin: -15px 0 15px;
+        }
+        
+        .remember-forgot label input {
+           accent-color: #fff;
+           margin-right: 3px;
+           
+        }
+        
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+        
+        .wrapper .btn {
+            width: 100%;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+<form action="">
+     <h1>Login</h1>
+        <form action="#" method="post">
+            <inputbox type="text" placeholder="Username"  required>
+      <div class="input-box">
+           <input type="text" placeholder="Username"  required> 
+     </div>
+     <div class="input-box">
+             <input type="password"
+            placeholder="Password" required>
+     </div>
+  <div class="remember-forgot">
+        <label><inputbox type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+  </div>
+        <button type="submit" class="btn">Login</button>
+  <div class="register-link">
+       <p>Don't have an account? 
+       <ahref="#">Register</a></p>
+    </form> 
+</div>
+</body>
+</html>
